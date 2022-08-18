@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Food Bazar</title>
+    <style>
+      body {
+        background: no-repeat
+          url("https://images.pexels.com/photos/1565982/pexels-photo-1565982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+        background-size: cover;
+      }
+      #navbar {
+        display: flex;
+        justify-content: space-around;
+        gap: 30%;
+        font-size: 33px;
+        font-weight: bold;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        border: 1px solid white;
+      }
+      #option {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+        cursor: pointer;
+      }
+      #options {
+        display: flex;
+        justify-content: space-evenly;
+        gap: 40px;
+        cursor: pointer;
+      }
+      #container {
+        border: 2px solid white;
+        display: flex;
+        margin: 0px 0px 0px 0px;
+      }
+      #checkbox-div {
+        border: 1px solid white;
+        height: 650px;
+        width: 400px;
+      }
+      .checkbox {
+        margin: 20px;
+        height: 20px;
+        width: 20px;
+      }
+      label {
+        font-size: 25px;
+        font-weight: bold;
+        color: rgb(249, 245, 242);
+      }
+      #display-div {
+        /* border: 4px solid black; */
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+        border-radius: 10px;
+        height: 400px;
+        width: 500px;
+        margin: 20px 90px 90px 100px;
+        margin: auto;
+      }
+      #btn-div {
+        text-align: center;
+      }
+      #order {
+        text-align: center;
+        font-size: 18px;
+        margin-top: 30px;
+        padding: 10px 15px;
+        border-radius: 13px 0px 13px 0px;
+        border: none;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-weight: bold;
+        margin-top: 10px;
+      }
+      #order:hover {
+        padding: 13px 17px;
+        background-color: rgb(18, 6, 6);
+        transition: 0.4s ease-out;
+        font-size: 20px;
+        border: 1px solid;
+      }
+      #display-div > img {
+        width: 100%;
+        height: 400px;
+        border-radius: 10px;
+      }
+      #display-section{
+        /* border: 3px solid white; */
+        margin: auto;
+
+      }
+      #orderdiv {
+        /* border: 1px solid white; */
+        height: auto;
+        width: 700px;
+        margin: 15px 90px 40px 150px;
+      }
+      #display-text {
+        /* margin: 20px 90px 90px 300px; */
+        text-align: center;
+        font-size: 40px;
+        color: white;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+      }
+      #option>h3 {
+        color: white;
+      }
+      #options>h3 {
+        color: white;
+      }
+      #orders {
+        display: flex;
+        justify-content: center;
+        height: 50px;
+        text-align: center;
+        font-size: 18px;
+        margin-top: 40px;
+        padding: 10px 15px;
+        border-radius: 13px 0px 13px 0px;
+        border: none;
+        background-color: rgb(0, 0, 0);
+        color: white;
+        font-weight: bold;
+        /* margin-top: 10px; */
+      }
+      #orders:hover {
+        padding: 13px 17px;
+        background-color: rgb(18, 6, 6);
+        transition: 0.4s ease-out;
+        font-size: 20px;
+        border: 1px solid;
+      }
+    </style>
+  </head>
+  <body id="body">
+    <div id="navbar">
+      <div id="option">
+        <h3>Home</h3>
+        <h3>About Us</h3>
+      </div>
+      <div id="options">
+        <h3 onclick="movetoLogin()">Login</h3>
+        <h3>SignUp</h3>
+        <button id="orders">Order</button>
+      </div>
+    </div>
+    <div id="container">
+      <div id="checkbox-div">
+        <div>
+          <input type="checkbox" id="momos" class="checkbox" value="0" />
+          <label for="momos">Paneer Momos</label>
+        </div>
+        <div>
+          <input type="checkbox" id="roll" class="checkbox" value="1" />
+          <label for="momos">Panner Roll</label>
+        </div>
+        <div>
+          <input type="checkbox" id="gobi" class="checkbox" value="2" />
+          <label for="momos">Gobi Manchurian</label>
+        </div>
+        <div>
+          <input type="checkbox" id="biriyani" class="checkbox" value="3" />
+          <label for="momos">Biriyani</label>
+        </div>
+        <div>
+          <input type="checkbox" id="dosa" class="checkbox" value="4" />
+          <label for="momos">Masal Dosa</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Pburger" class="checkbox" value="5" />
+          <label for="momos">Paneer Burger</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pizza" class="checkbox" value="6" />
+          <label for="momos">Onion Pizza</label>
+        </div>
+
+        <div>
+          <input type="checkbox" id="friedrice" class="checkbox" value="7" />
+          <label for="momos">Schezwan Fried Rice</label>
+        </div>
+        <div>
+          <input type="checkbox" id="Cburger" class="checkbox" value="8" />
+          <label for="momos">Chicken Burger</label>
+        </div>
+        <div>
+          <input type="checkbox" id="pasta" class="checkbox" value="9" />
+          <label for="momos">Pasta alla Norma</label>
+        </div>
+        <div>
+          <input type="checkbox" id="tacos" class="checkbox" value="10" />
+          <label for="momos">Chicken Tikka Piece</label>
+        </div>
+        <div id="btn-div">
+          <button id="order">Order</button>
+        </div>
+      </div>
+
+      <div id="display-section">
+        <div id="orderdiv">
+          <h3 id="orderno"></h3>
+        </div>
+        <div id="display-div"></div>
+      </div>
+    </div>
+  </body>
+</html>
+
+<script>
+  var images = [
+    "https://www.chefkunalkapur.com/wp-content/uploads/2021/07/CW0_7613.jpg?v=1627703755",
+    "https://spicecravings.com/wp-content/uploads/2020/12/Paneer-kathi-Roll-Featured-1.jpg",
+    "https://1.bp.blogspot.com/-Q6aYDvIxmoc/XuCxKCPQWoI/AAAAAAAACRo/LKByKiukd9wdy6oSPUsv7bjTxcA4a9jogCLcBGAsYHQ/s1600/Gobi%2BManchurian%2B%25281%2529.jpeg",
+    "https://assets.thehansindia.com/h-upload/2021/08/18/1102832-biryani-kilo.webp",
+    "https://www.efghfoods.com/wp-content/uploads/2020/11/Blog-2-min.jpg",
+    "https://makethetoast.com/wp-content/uploads/Paneer-Makhani-Burger-Crispy-Tandoori-Paneer-Burger-.jpg",
+    "https://content.jdmagicbox.com/comp/surat/j7/0261px261.x261.190611130622.y7j7/catalogue/red-flames-pizzeria-varachha-road-surat-pizza-outlets-1l4jfe81mc.jpg?clr=",
+    "https://www.cookclickndevour.com/wp-content/uploads/2016/04/schezwan-fried-rice-recipe-1.jpg",
+    "https://www.kitchensanctuary.com/wp-content/uploads/2019/08/Crispy-Chicken-Burger-square-FS-4518.jpg",
+    "https://1.bp.blogspot.com/-MUEnrPTaeu8/XyDUXVG_CHI/AAAAAAAAQzk/H4WtV_TDWLYago3RekP9T9S00_98rnRxwCLcBGAsYHQ/w1200-h630-p-k-no-nu/Masala%2BPasta.webp",
+    "https://i.ytimg.com/vi/GgOGT-cBlJk/maxresdefault.jpg",
+  ];
+
+  // selecting all the checkboxes with their class names;
+
+  var body = document.querySelector("#body");
+
+  var checkboxes = document.querySelectorAll(".checkbox");
+  var selected;
+  let order;
+  let name;
+
+  // this will return an object of all checkboxes (reason = > querySelectorAll);
+  // so running a loop in this object of checboxes to obtain the innerHTML of the checkbox;
+
+  for (var checkbox of checkboxes) {
+    checkbox.addEventListener("click", function () {
+      if (this.checked == true) {
+        selected = this.value;
+      } else {
+        console.log("You have to select any options");
+      }
+    });
+  }
+
+  document.querySelector("#orders").addEventListener("click", placeOrder);
+
+  let imgbox = document.querySelector("#display-div");
+
+  function placeOrder() {
+    document.querySelector("#orderno").innerHTML = null;
+    document.querySelector("#display-div").innerHTML = null;
+
+    order = document.createElement("h3");
+    order.innerText =  "Your food is being prepared. . !";
+    order.setAttribute("id", "display-text");
+
+    document.querySelector("#orderno").append(order);
+
+    const myPromise = new Promise((resolve, reject) => {
+      timer = Math.random() * 10 * 1000;
+      flag = false;
+      setTimeout(() => {
+        if (flag == false) resolve("hey");
+      }, timer);
+    });
+
+    myPromise.then((res) => {
+      let img = document.createElement("img");
+      img.src = images[selected];
+      img.border = "6px solid white";
+      img.style.opacity = 2;
+      order.innerHTML = `Order NO.${Math.ceil(timer / 10)} is ready. .!`;
+
+      // body.style.opacity = 0.7;
+      imgbox.append(img);
+      
+    });
+  }
+
+  function movetoLogin() {
+    window.location.href = "index.html";
+  }
+</script>

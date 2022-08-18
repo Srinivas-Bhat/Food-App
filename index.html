@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background: no-repeat url("https://images.pexels.com/photos/2983102/pexels-photo-2983102.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+            background-size: cover;
+        }
+        #entry{
+            text-align: center;
+            border: 1px solid white;
+            height: 410px;
+            width: 40%;
+            margin: auto;
+            margin-top: 90px;
+            opacity: 0.75;
+            border-radius: 15px;
+
+        }
+        #entry:hover{
+            border: 2px solid white;
+            transition: 0.5s ease-out;
+        }
+        #entry>input{
+            text-align: center;
+            height: 70px;
+            width: 400px;
+            margin-top: 30px;
+            font-size: 25px;
+            border-radius: 10px;
+            border: 1px solid grey;
+
+        }
+        #entry>input:hover{
+            height: 73px;
+            width: 410px;
+            transition: 0.3s ease-out;
+        }
+        #entry>button{
+            text-align: center;
+            font-size: 18px;
+            margin-top: 30px;
+            padding: 10px 15px;
+            border-radius: 13px 0px 13px 0px;
+            border: none;
+            background-color: rgb(72, 72, 72);
+            color: white;
+            font-weight: bold;
+
+        }
+        #entry>button:hover{
+            padding: 13px 17px;
+            background-color: rgb(34, 33, 33);
+            transition: 0.4s ease-out;
+            font-size: 20px;
+            border: 1px solid ;
+        }
+        #user{
+            padding: 15px 25px;
+            font-size: 17px;
+            background-color: black;
+            border: none;
+            border-radius: 15px;
+            color: white;
+            font-weight: bold;
+
+        }
+        #user:hover{
+            transition: 0.3s ease-out;
+            padding: 16px 29px;
+            color: rgb(26, 26, 26);
+            color: rgb(205, 205, 205);
+            opacity: 1;
+            border: 1px solid;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="entry">
+        <input type="text" placeholder="Enter Your Name">
+        <br>
+        <input type="text" placeholder="Enter Your Password">
+        <br>
+        <button onclick="moving()">Submit</button>
+        <br>
+        <br>
+        <br>
+        <div id="user-div">
+            <button id="user" onclick="moving()">Click if Already an User</button>
+        </div>
+    </div>
+
+    
+</body>
+</html>
+
+<script>
+    function moving() {
+        window.location.href = "food.html";
+    }
+
+
+</script>
+
+<!-- https://images.pexels.com/photos/2983098/pexels-photo-2983098.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1 -->
