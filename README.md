@@ -4,6 +4,7 @@
  
  ### Other functionalities include.
  - Login Page.
+ - Random Order Number.
  
  Login Page.
  
