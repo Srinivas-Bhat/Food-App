@@ -1,6 +1,6 @@
 # Food-App
 
- ### A simple project on food app. User when clicks on the checkbox and click on the order button, respective product will be ordered and particular image of the image is displayed.
+ ### A simple project on a food app. Users when clicking on the checkbox and clicking on the order button, the respective product will be ordered, and a particular image of the image is displayed.
  
  ### Other functionalities include.
  - Login Page.
@@ -21,4 +21,4 @@ Your order.
 
 Deployed Link:
 
-https://glittery-pavlova-f03ed3.netlify.app
+https://delicate-babka-02c9e3.netlify.app/
