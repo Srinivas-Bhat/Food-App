@@ -21,4 +21,4 @@ Your order.
 
 Deployed Link:
 
-https://delicate-babka-02c9e3.netlify.app/
+https://food-app-six-rho.vercel.app/
